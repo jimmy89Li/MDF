@@ -1,0 +1,12 @@
+{
+  "name": "mdf1",
+  "version": "1.0.0",
+  "description": "Testing Modern Frontend Development",
+  "main": "index.js",
+  "author": "jimmyLi",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7"
+  }
+}
