@@ -18,7 +18,8 @@ gulp.task('sass', function () {
     	includePaths: require('node-normalize-scss').includePaths
     }).on('error', sass.logError))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./public/assets/css'));
+    .pipe(gulp.dest('./public/assets/css'))
+        .pipe(browserSync.stream());
 });
  
 // watch-sass task - auto converts sass into css whenever something
@@ -36,4 +37,5 @@ gulp.task('browser-sync', function() {
             baseDir: "C:/Users/jimmyLi/Documents/GitHub/MDF/public/"
         }
     });
+    gulp.watch('./source/scss/**/*.scss', ['sass']);
 });
