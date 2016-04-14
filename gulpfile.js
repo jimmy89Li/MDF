@@ -33,7 +33,7 @@ gulp.task('watch-sass', function () {
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: "C:/Users/jimmyLi/Documents/GitHub/MDF/public/"
         }
     });
 });
