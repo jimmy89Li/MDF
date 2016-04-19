@@ -36,20 +36,22 @@ nav {
 	border: none;
 	padding: 10px 0;
 	a {
-		margin: 20px;
+		margin-right: 20px;
 		padding: 20px 0;
 
-	}
-	a:first-child {
-		margin-left: 0;
 	}
 }
 
 /* Banner section */
-#banner {
+.banner {
 	width: 100%;
 	min-height: 200px;
 	max-height: 600px;
 	border: 1px solid blue;
-	background-image: url("assets/img/banner.jpg");	
+	background-image: url("assets/img/banner.png");
+	background-repeat: no-repeat;	
+	-web-kit-background-size: cover;
+	-moz-backgroud-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
 }
